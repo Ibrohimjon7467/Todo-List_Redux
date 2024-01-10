@@ -1,7 +1,7 @@
+import {v4 as uuidv4} from 'uuid'
 import { useEffect, useRef } from "react"
 import { useSelector, useDispatch } from "react-redux"
 import { addTodo, removeTodo, toggleComplete, statistic } from "./features/todoSlice"
-import {v4 as uuidv4} from 'uuid'
 
 function App() {
   const { todos, completed, uncompleted } = useSelector((store) => store.todo)
